@@ -14,6 +14,9 @@ npx cap sync
 <docgen-index>
 
 * [`echo(...)`](#echo)
+* [`getAppInstaller()`](#getappinstaller)
+* [`getManifestValues()`](#getmanifestvalues)
+* [Type Aliases](#type-aliases)
 
 </docgen-index>
 
@@ -33,5 +36,37 @@ echo(options: { value: string; }) => Promise<{ value: string; }>
 **Returns:** <code>Promise&lt;{ value: string; }&gt;</code>
 
 --------------------
+
+
+### getAppInstaller()
+
+```typescript
+getAppInstaller() => Promise<{ installer: string | null; }>
+```
+
+**Returns:** <code>Promise&lt;{ installer: string | null; }&gt;</code>
+
+--------------------
+
+
+### getManifestValues()
+
+```typescript
+getManifestValues() => Promise<{ values: Record<string, any>; }>
+```
+
+**Returns:** <code>Promise&lt;{ values: <a href="#record">Record</a>&lt;string, any&gt;; }&gt;</code>
+
+--------------------
+
+
+### Type Aliases
+
+
+#### Record
+
+Construct a type with a set of properties K of type T
+
+<code>{ [P in K]: T; }</code>
 
 </docgen-api>

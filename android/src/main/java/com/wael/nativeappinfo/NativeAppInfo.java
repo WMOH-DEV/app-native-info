@@ -8,4 +8,5 @@ public class NativeAppInfo {
         Log.i("Echo", value);
         return value;
     }
+
 }

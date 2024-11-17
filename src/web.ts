@@ -7,4 +7,14 @@ export class NativeAppInfoWeb extends WebPlugin implements NativeAppInfoPlugin {
     console.log('ECHO', options);
     return options;
   }
+
+  async getAppInstaller(): Promise<{ installer: string | null }> {
+    console.log('Web platform does not support getAppInstaller');
+    return { installer: null };
+  }
+
+  async getManifestValues(): Promise<{ values: Record<string, any> }> {
+    console.log('Web platform does not support getManifestValues');
+    return { values: {} };
+  }
 }
